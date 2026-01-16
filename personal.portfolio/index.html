@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scr">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <h1></h1>
+               <ul>
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#About">About</a></li>
+                   <li><a href="#Services">Services</a></li>
+                   <li><a href="#contact">contact</a></li>
+               </ul>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Designer</p>
+                <h2>Hi, I'm <span>SIVASAKTHI</span><br> from Tamil Nadu</h2>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/gro.PNG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I’m <strong>Sivasakthi</strong>, a dedicated and enthusiastic Frontend Designer. With a strong foundation in web development and a deep interest in building intuitive digital experiences, I aim to make the web more accessible and visually appealing. I completed  Bachelor’s degree , I'm  also diving into full stack development in python. 
+                     Apart from coding, I enjoy listening to music, cooking, and watching movies. These hobbies not only refresh my mind but also inspire creativity in my designs. I believe in continuous learning, teamwork, and using technology to solve real-world problems. Let's build something amazing together!</p>
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('skills', event)">skills</p>
+                      <p class="tab-links" onclick="opentab('experience', event)">experience</p>
+                      <p class="tab-links" onclick="opentab('education', event)">education</p>
+                    </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Decision making skill</span></li>
+                        <li><span>leadership</span></li>
+                        <li><span>communication skill</span></li>
+                        <li><span>Time Management</span></li>
+                         <li><span>Website designing</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>NO Experience</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School</span><br>I completed my schooling from N.V.K.S Hr Secondary School</li>
+                        <li><span>College</span> <br>Bachelor Degree in EEE from Amrita college of Engineering</li>
+                        <li><span>Course</span><br>currently Learning Advanced full stack Development in python</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+    <div>
+        <h2>Online Examination Portal</h2>
+        <p>A complete mini-project developed with features like face detection using Face API, dynamic question loading, timer, webcam monitoring, and auto-scoring. Built with JavaScript, HTML, CSS, and backend logic.</p>
+        <a href="#">Explore Project</a>
+    </div>
+    <div>
+        <h2>Personal Portfolio (Frontend Only)</h2>
+        <p>Designed a modern, responsive personal portfolio to showcase my skills, education, and projects. Built using clean HTML, CSS, and a touch of JavaScript for interactivity.</p>
+        <a href="#">View Portfolio</a>
+    </div>
+    <div>
+        <h2>Chatbot UI Design (Frontend Only)</h2>
+        <p>Created a stylish chatbot interface layout ready for integration. It's a clean and simple frontend mockup designed for future AI/ML integration using HTML and CSS.</p>
+        <a href="#">Preview Chatbot</a>
+    </div>
+    <div>
+        <h2>Adidas Shopping Website (Frontend Only)</h2>
+        <p>Developed a frontend clone of the Adidas shopping site, including product cards, filters, and responsive layout. Designed purely for UI/UX demonstration using HTML and CSS Grid/Flexbox.</p>
+        <a href="#">See Design</a>
+    </div>
+</div>
+        </div>
+    </div>
+    <div id="contact">
+    <div class="container">
+        <div class="contact-box">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><strong>Email:</strong> sivasakthi.portfolio@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 90254 36484</p>
+                    <a href="img/prof resume.pdf" download class="btn btn2">Download CV</a>
+                </div> 
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your full name" required>
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <textarea name="Message" rows="6" placeholder="Type your message here..." required></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Sivasakthi. All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+    </div>
+    <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+   
+</body>
+</html>
