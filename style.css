@@ -257,3 +257,78 @@ form .btn2 {
     font-weight: 300;
     margin-top: 20px;
 }
+
+/* ===================== Mobile Devices (up to 480px) ===================== */
+@media (max-width: 480px) {
+    /* Container padding smaller */
+    .container {
+        padding: 10px 5%;
+    }
+
+    /* Header Text */
+    .header-text {
+        margin-top: 10%;
+        font-size: 1.5rem;
+    }
+
+    .header-text h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Navigation stack vertically */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    /* About section: stack columns vertically */
+    .about-col-1,
+    .about-col-2 {
+        flex: 1 1 100%;
+    }
+
+    /* Subtitles smaller */
+    .sub-title {
+        font-size: 2rem;
+    }
+
+    /* Tabs: stack vertically */
+    .tab-titles {
+        flex-direction: column;
+    }
+
+    .tab-links {
+        margin: 10px 0;
+    }
+
+    /* Services cards smaller padding and font */
+    .services-list div {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    /* Contact section stack columns vertically */
+    .contact-left,
+    .contact-right {
+        flex: 1 1 100%;
+    }
+
+    /* Contact form inputs smaller font and padding */
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Contact buttons smaller */
+    form .btn2 {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
